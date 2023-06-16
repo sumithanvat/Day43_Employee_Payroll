@@ -131,4 +131,35 @@ select{
     letter-spacing: 0px; 
     color: #42515f;
     background-color: transparent;
-};
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .button-container input[type="button"],
+  .button-container input[type="reset"],
+  .button-container input[type="submit"] {
+    flex: 1;
+    margin-right: 5px;
+    background-color: #4CAF50;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .button-container input[type="button"]:hover,
+  .button-container input[type="reset"]:hover,
+  .button-container input[type="submit"]:hover {
+    background-color: #efff60;
+  }
+
+  .button-container input[type="button"]:last-child {
+    margin-right: 0;
+  }
+
+*{box-sizing: border-box;}
+
